@@ -10,4 +10,3 @@ class UserMailerTest < ActionMailer::TestCase
     assert_match "/email/confirmations/", mail.body.encoded
   end
 end
-# adding comment
