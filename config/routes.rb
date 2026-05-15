@@ -23,13 +23,11 @@ Rails.application.routes.draw do
     resources :confirmations, param: :token, only: [ :show ]
   end
 
-    # Admins Only
+  # Admins Only
   namespace :store do
     resources :products
     resources :users
 
     root to: redirect("/store/products")
   end
-
-
 end

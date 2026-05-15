@@ -16,4 +16,3 @@ class Settings::EmailsController < Settings::BaseController
       params.expect(user: [ :password_challenge, :unconfirmed_email ]).with_defaults(password_challenge: "")
     end
 end
-

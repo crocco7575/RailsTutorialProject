@@ -33,8 +33,4 @@ class SignUpsControllerTest < ActionDispatch::IntegrationTest
     end
     refute User.find_by(email_address: "example@user.org").admin?
   end
-
-
-
-
 end

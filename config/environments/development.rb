@@ -78,10 +78,8 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: 'mailcatcher', # Matches the service name in docker-compose
+    address: "mailcatcher", # Matches the service name in docker-compose
     port: 1025              # Standard Mailcatcher SMTP port
   }
   config.action_mailer.raise_delivery_errors = true
-
-  
 end

@@ -18,5 +18,4 @@ class Settings::EmailsControllerTest < ActionDispatch::IntegrationTest
     assert_equal "new@example.org", user.reload.unconfirmed_email
     assert_enqueued_email_with UserMailer, :email_confirmation, params: { user: user }
 end
-
 end

@@ -15,4 +15,3 @@ class Settings::PasswordsController < Settings::BaseController
       params.expect(user: [ :password, :password_confirmation, :password_challenge ]).with_defaults(password_challenge: "")
     end
 end
-

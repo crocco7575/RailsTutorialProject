@@ -39,6 +39,4 @@ test "admins can access /store/users" do
   get store_users_path
   assert_response :success
 end
-
-
 end
