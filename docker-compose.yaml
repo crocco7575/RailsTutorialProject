@@ -6,3 +6,11 @@ services:
       - .:/myapp
     ports:
       - "3000:3000"
+    depends_on:
+      - mailcatcher
+
+  mailcatcher:
+    image: sj26/mailcatcher
+    ports:
+      - "1080:1080" # Web interface
+      - "1025:1025"
