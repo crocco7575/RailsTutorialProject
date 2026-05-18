@@ -40,7 +40,7 @@ Rails.application.routes.draw do
     root to: redirect("/store/products")
   end
 
-  resources :books do 
+  resources :books do
     resources :reviews
   end
 end

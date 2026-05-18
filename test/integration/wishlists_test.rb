@@ -95,14 +95,4 @@ end
         assert_response :not_found
         assert_equal wishlist, wishlist_product.reload.wishlist
       end
-
-      
-
-
-
-
-
-
-
-
 end
